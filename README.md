@@ -1,299 +1,299 @@
-# BioAuthPay - 生物识别智能支付授权系统
+# BioAuthPay - Biometric Smart Payment Authorization System
 
-基于设备原生安全的AI代理支付授权解决方案，融合EIP-7951与HTTP 402协议，让AI支付更安全、更便捷。
+An AI agent payment authorization solution based on device-native security, integrating EIP-7951 and HTTP 402 protocols to make AI payments more secure and convenient.
 
-## 项目说明
+## Project Overview
 
-BioAuthPay是一个创新的AI代理支付授权系统，将生物识别技术、设备原生安全芯片与区块链支付完美结合。用户通过手机指纹、Face ID或Windows Hello等设备内置的生物识别功能一次性授权额度,AI代理可在授权范围内自动完成小额支付，无需每次重复确认，极大提升了AI自动化支付的用户体验和安全性。
+BioAuthPay is an innovative AI agent payment authorization system that perfectly combines biometric technology, device-native security chips, and blockchain payments. Users authorize payment limits through device-native biometric authentication (fingerprint, Face ID, or Windows Hello), enabling AI agents to automatically complete micropayments within the authorized scope without repeated confirmations, significantly enhancing the user experience and security of AI-automated payments.
 
-## 🚀 主要特点
+## Main Features
 
-- **设备原生安全**：私钥存储在设备安全芯片（Secure Enclave/TEE）中，永不离开设备
-- **生物识别授权**：支持指纹、Face ID、Windows Hello等多种生物识别方式
-- **智能授权策略**：一次授权多次使用，小额支付自动执行，大额支付需重新授权
-- **HTTP 402集成**：完美支持HTTP 402 Payment Required协议，实现Web资源的无缝付费访问
-- **EIP-7951标准**：采用secp256r1椭圆曲线签名，与现代设备安全标准完美兼容
-- **链上审计追踪**：所有支付记录永久存储在区块链上，可查询、可验证
+- **Device-Native Security**: Private keys are stored in device security chips (Secure Enclave/TEE) and never leave the device
+- **Biometric Authorization**: Supports multiple biometric methods including fingerprint, Face ID, and Windows Hello
+- **Smart Authorization Policy**: One-time authorization for multiple uses; micropayments execute automatically, while large payments require re-authorization
+- **HTTP 402 Integration**: Perfect support for HTTP 402 Payment Required protocol, enabling seamless paid access to web resources
+- **EIP-7951 Standard**: Adopts secp256r1 elliptic curve signatures, perfectly compatible with modern device security standards
+- **On-Chain Audit Trail**: All payment records are permanently stored on the blockchain, queryable and verifiable
 
-## 项目链接
+## Project Links
 
 - **GitHub**: [https://github.com/yourusername/BioAuthPay](https://github.com/yourusername/BioAuthPay)
-- **Demo演示**: [http://localhost:3000](http://localhost:3000)
+- **Live Demo**: [http://localhost:3000](http://localhost:3000)
 
-## 🏆 成就与亮点
+## Achievements and Highlights
 
-- **创新融合**：将EIP-7951设备原生安全标准与HTTP 402支付协议结合，开创了Web3支付的新模式
-- **真实可用**：解决了AI代理自动支付中的安全性与便捷性矛盾，提供了生产级解决方案
-- **用户友好**：无需记住复杂的私钥，用指纹或人脸即可完成授权，降低了Web3使用门槛
-- **安全可控**：支持灵活的授权策略配置，用户可自定义单次阈值和总授权额度
+- **Innovative Integration**: Combines EIP-7951 device-native security standards with HTTP 402 payment protocol, pioneering a new model for Web3 payments
+- **Production-Ready**: Solves the conflict between security and convenience in AI agent automated payments with a production-grade solution
+- **User-Friendly**: No need to remember complex private keys; authorization via fingerprint or face recognition lowers the barrier to Web3 adoption
+- **Secure and Controllable**: Supports flexible authorization policy configuration, allowing users to customize single-transaction thresholds and total authorization limits
 
-## 团队
+## Team
 
-- **开发者**: [Andy]
-- **角色**: 全栈开发 / 产品设计
-- **联系方式**: tdcq532787678@gmail.com
+- **Developer**: [Andy]
+- **Role**: Full-Stack Development / Product Design
+- **Contact**: tdcq532787678@gmail.com
 
-## ✨ 一句话解释
+## One-Sentence Explanation
 
-BioAuthPay让AI代理可以像人类一样安全、便捷地完成支付 - 用生物识别授权一次，AI自动处理多次小额支付，就像给AI办了一张"指纹支付的信用卡"！
+BioAuthPay enables AI agents to complete payments as securely and conveniently as humans - authorize once with biometrics, and AI automatically handles multiple micropayments, like giving AI a "fingerprint-enabled credit card"!
 
-## 🔍 我们解决了什么问题？
+## What Problems Do We Solve?
 
-### 问题一：AI代理支付的安全困境
+### Problem One: Security Dilemma of AI Agent Payments
 
-**传统方式**：AI代理需要访问用户私钥才能发起支付，存在严重安全隐患。
+**Traditional Approach**: AI agents need access to user private keys to initiate payments, posing serious security risks.
 
-**我们的方案**：私钥永不离开设备安全芯片，AI代理只能在用户生物识别授权后的额度内支付，既保证安全又实现自动化。
+**Our Solution**: Private keys never leave the device security chip; AI agents can only make payments within the user's biometrically-authorized limit, ensuring both security and automation.
 
-### 问题二：每次支付都需要用户确认，体验糟糕
+### Problem Two: Requiring User Confirmation for Every Payment Creates Poor Experience
 
-**传统方式**：每次小额支付都需要用户打开钱包、输入密码、确认交易，打断工作流程。
+**Traditional Approach**: Every micropayment requires users to open their wallet, enter passwords, and confirm transactions, disrupting workflows.
 
-**我们的方案**：一次生物识别授权，AI可在授权额度内自动完成多次支付，只有超出阈值时才需要重新授权。
+**Our Solution**: One-time biometric authorization enables AI to automatically complete multiple payments within the authorized limit; re-authorization is only needed when thresholds are exceeded.
 
-### 问题三：Web资源付费访问体验割裂
+### Problem Three: Fragmented Experience for Paid Web Resource Access
 
-**传统方式**：访问付费内容需要注册、绑卡、充值、订阅，流程复杂。
+**Traditional Approach**: Accessing paid content requires registration, card binding, recharge, and subscription - a complex process.
 
-**我们的方案**：通过HTTP 402协议，AI检测到需要付费时自动处理支付，用户无感知获取内容，真正实现"即用即付"。
+**Our Solution**: Through HTTP 402 protocol, AI automatically handles payments when detecting paid content, allowing users to access content seamlessly with true "pay-as-you-go" functionality.
 
-## 💡 核心技术如何使这一切成为可能？
+## How Core Technologies Make This Possible?
 
-### EIP-7951: 设备原生安全
+### EIP-7951: Device-Native Security
 
-EIP-7951允许智能合约直接验证来自设备安全芯片的secp256r1签名。这意味着：
+EIP-7951 allows smart contracts to directly verify secp256r1 signatures from device security chips. This means:
 
-1. **私钥生成在安全芯片中**：iOS的Secure Enclave、Android的TEE、Windows TPM等
-2. **私钥永不导出**：硬件级保护，即使设备被root也无法窃取
-3. **每次签名需生物识别**：指纹、Face ID等，防止未授权使用
-4. **链上可验证**：智能合约可直接验证签名有效性，无需信任第三方
+1. **Private Keys Generated in Security Chips**: iOS Secure Enclave, Android TEE, Windows TPM, etc.
+2. **Private Keys Never Exported**: Hardware-level protection; even rooted devices cannot extract keys
+3. **Biometric Required for Each Signature**: Fingerprint, Face ID, etc., preventing unauthorized use
+4. **On-Chain Verifiable**: Smart contracts can directly verify signature validity without trusting third parties
 
 ### HTTP 402: Payment Required
 
-HTTP 402是专门为Web资源付费设计的状态码，在我们的系统中：
+HTTP 402 is a status code specifically designed for web resource payments. In our system:
 
-1. **资源保护**：服务器返回402响应，告知需要支付
-2. **自动处理**：AI代理检测到402，自动从授权额度中支付
-3. **获取凭证**：支付完成后获得区块链交易哈希作为凭证
-4. **访问资源**：携带支付凭证重新请求，获得受保护内容
+1. **Resource Protection**: Server returns 402 response, indicating payment required
+2. **Automatic Processing**: AI agent detects 402 and automatically pays from authorized limit
+3. **Obtain Credentials**: After payment completion, receive blockchain transaction hash as proof
+4. **Access Resources**: Re-request with payment credentials to obtain protected content
 
-### 智能授权策略
+### Smart Authorization Policy
 
-我们设计了灵活的授权策略系统：
+We designed a flexible authorization policy system:
 
-- **总授权额度**：用户一次性授权总金额（如1000 USDC）
-- **单次支付阈值**：超过此金额需重新授权（如500 USDC）
-- **自动扣费**：符合条件的支付自动执行，无需用户确认
-- **额度追踪**：实时显示已用额度和剩余额度
-- **灵活配置**：用户可随时调整授权策略
+- **Total Authorization Limit**: User authorizes total amount in one go (e.g., 1000 USDC)
+- **Single Payment Threshold**: Payments exceeding this amount require re-authorization (e.g., 500 USDC)
+- **Automatic Deduction**: Qualifying payments execute automatically without user confirmation
+- **Limit Tracking**: Real-time display of used and remaining limits
+- **Flexible Configuration**: Users can adjust authorization policies anytime
 
-## 核心特性
+## Core Features
 
-### 🔐 多设备生物识别支持
+### Multi-Device Biometric Support
 
-- **iOS设备**: Face ID / Touch ID
-- **Android设备**: 指纹识别 / 面部识别
-- **Windows**: Windows Hello (指纹/面部/虹膜)
+- **iOS Devices**: Face ID / Touch ID
+- **Android Devices**: Fingerprint Recognition / Facial Recognition
+- **Windows**: Windows Hello (Fingerprint/Face/Iris)
 - **macOS**: Touch ID
 
-所有生物识别操作都在设备安全区域内完成，第三方应用无法访问生物特征数据。
+All biometric operations are completed within the device secure area, with third-party applications unable to access biometric data.
 
-### 💰 灵活的授权策略
+### Flexible Authorization Policies
 
-- **总额度控制**: 设置一次性授权的总金额上限
-- **单次阈值**: 配置单笔支付的自动执行上限
-- **额度追踪**: 实时显示已用额度和剩余额度
-- **自动提醒**: 额度即将用尽时提醒用户
-- **即时生效**: 授权配置修改后立即生效
+- **Total Limit Control**: Set maximum total amount for one-time authorization
+- **Single Transaction Threshold**: Configure automatic execution limit for single payments
+- **Limit Tracking**: Real-time display of used and remaining limits
+- **Automatic Reminders**: Alert users when limit is about to be exhausted
+- **Immediate Effect**: Authorization configuration changes take effect immediately
 
-### 🌐 HTTP 402资源保护
+### HTTP 402 Resource Protection
 
-- **标准协议**: 基于HTTP 402 Payment Required标准
-- **资源配置**: 服务提供商可灵活配置资源价格
-- **自动支付**: AI检测到402响应后自动处理支付
-- **无缝访问**: 支付完成后透明获取受保护内容
-- **链上凭证**: 每次支付都有链上交易哈希作为凭证
+- **Standard Protocol**: Based on HTTP 402 Payment Required standard
+- **Resource Configuration**: Service providers can flexibly configure resource prices
+- **Automatic Payment**: AI automatically processes payment upon detecting 402 response
+- **Seamless Access**: Transparently obtain protected content after payment completion
+- **On-Chain Credentials**: Each payment has an on-chain transaction hash as proof
 
-### 📊 完整的审计追踪
+### Complete Audit Trail
 
-- **支付记录**: 每笔支付的完整信息永久存储
-- **授权历史**: 所有授权操作可追溯
-- **签名验证**: 支持验证每次签名的有效性
-- **区块链浏览**: 可在区块链浏览器上查询交易
-- **合规审计**: 满足监管审计要求
+- **Payment Records**: Complete information for each payment permanently stored
+- **Authorization History**: All authorization operations are traceable
+- **Signature Verification**: Support verification of each signature's validity
+- **Blockchain Explorer**: Query transactions on blockchain explorer
+- **Compliance Audit**: Meets regulatory audit requirements
 
-## 技术实现
+## Technical Implementation
 
-### 前端技术栈
+### Frontend Tech Stack
 
-- **框架**: Next.js 16.1.0 (App Router + Turbopack)
-- **UI库**: React 19.2.3 + shadcn/ui + Tailwind CSS 4
-- **状态管理**: Zustand 5.0.9
-- **图标**: Lucide React
-- **语言**: TypeScript 5
+- **Framework**: Next.js 16.1.0 (App Router + Turbopack)
+- **UI Library**: React 19.2.3 + shadcn/ui + Tailwind CSS 4
+- **State Management**: Zustand 5.0.9
+- **Icons**: Lucide React
+- **Language**: TypeScript 5
 
-### 核心模块
+### Core Modules
 
-- **支付授权控制台** (`app/page.tsx`):
-  - 三步式支付流程展示
-  - AI请求生成与支付详情展示
-  - 实时系统日志监控
+- **Payment Authorization Console** (`app/page.tsx`):
+  - Three-step payment flow display
+  - AI request generation and payment details display
+  - Real-time system log monitoring
 
-- **授权管理后台** (`app/admin/page.tsx`):
-  - 授权额度配置
-  - 单次支付阈值设置
-  - 使用情况统计展示
+- **Authorization Management Backend** (`app/admin/page.tsx`):
+  - Authorization limit configuration
+  - Single payment threshold settings
+  - Usage statistics display
 
-- **402资源配置** (`app/admin/402-config/page.tsx`):
-  - 受保护资源配置
-  - 支付金额和收款地址设置
-  - 区块链网络选择
+- **402 Resource Configuration** (`app/admin/402-config/page.tsx`):
+  - Protected resource configuration
+  - Payment amount and recipient address settings
+  - Blockchain network selection
 
-- **状态管理** (`lib/store.ts`):
-  - 支付流程状态管理
-  - 授权策略引擎
-  - 智能支付决策逻辑
+- **State Management** (`lib/store.ts`):
+  - Payment flow state management
+  - Authorization policy engine
+  - Smart payment decision logic
 
-- **生物识别组件** (`components/BioAuthModal.tsx`):
-  - 通用生物识别授权弹窗
-  - 多设备类型模拟
-  - 授权成功回调处理
+- **Biometric Component** (`components/BioAuthModal.tsx`):
+  - Universal biometric authorization modal
+  - Multi-device type simulation
+  - Authorization success callback handling
 
-### API设计
+### API Design
 
-- **GET /api/resources/[id]**: 受保护资源访问接口
-  - 无支付凭证返回402状态
-  - 携带凭证返回受保护内容
-  - 支持多种资源类型
+- **GET /api/resources/[id]**: Protected resource access interface
+  - Returns 402 status without payment credentials
+  - Returns protected content with credentials
+  - Supports multiple resource types
 
-## 应用场景
+## Application Scenarios
 
-### AI订阅服务自动续费
+### AI Subscription Service Auto-Renewal
 
-AI代理检测到Netflix、Spotify等订阅服务即将到期，在授权额度内自动完成续费，用户无需手动操作。
+AI agents detect upcoming expiration of subscription services like Netflix and Spotify, automatically completing renewals within the authorized limit without manual user intervention.
 
-### AI内容创作付费素材
+### AI Content Creation Paid Assets
 
-AI在创作内容时需要使用付费素材（图片、音乐、字体等），自动完成小额支付并获取使用权。
+When AI creates content requiring paid assets (images, music, fonts, etc.), it automatically completes micropayments and obtains usage rights.
 
-### 企业级AI服务调用
+### Enterprise AI Service Invocation
 
-企业为AI助手配置授权额度，AI可自动调用各种API服务（翻译、分析、数据查询等），提高工作效率。
+Enterprises configure authorization limits for AI assistants, enabling automatic invocation of various API services (translation, analysis, data queries, etc.) to improve work efficiency.
 
-### 去中心化应用微支付
+### Decentralized Application Micropayments
 
-DApp用户一次授权，应用内的各种小额操作（发送消息、创建内容、投票等）自动完成支付，提升用户体验。
+DApp users authorize once, and various small operations within the app (sending messages, creating content, voting, etc.) automatically complete payments, enhancing user experience.
 
-## 项目架构
+## Project Architecture
 
 ```
 ┌─────────────────────┐
-│    用户界面层        │
-│  - 支付授权控制台    │
-│  - 授权管理后台      │
-│  - 402资源配置       │
+│   User Interface    │
+│  - Payment Console  │
+│  - Admin Backend    │
+│  - 402 Config       │
 └──────────┬──────────┘
            │
 ┌──────────▼──────────┐
-│    业务逻辑层        │
-│  - Zustand状态管理   │
-│  - 授权策略引擎      │
-│  - 支付流程控制      │
+│   Business Logic    │
+│  - Zustand Store    │
+│  - Auth Policy      │
+│  - Payment Control  │
 └──────────┬──────────┘
            │
 ┌──────────▼──────────┐
-│    安全授权层        │
-│  - EIP-7951签名      │
-│  - 生物识别验证      │
-│  - 设备安全芯片      │
+│  Security Layer     │
+│  - EIP-7951 Sign    │
+│  - Biometric Auth   │
+│  - Security Chip    │
 └──────────┬──────────┘
            │
 ┌──────────▼──────────┐
-│    区块链层          │
-│  - 智能合约          │
-│  - 链上存储          │
-│  - 交易验证          │
+│  Blockchain Layer   │
+│  - Smart Contract   │
+│  - On-Chain Storage │
+│  - TX Verification  │
 └─────────────────────┘
 ```
 
-## 快速开始
+## Quick Start
 
-### 安装依赖
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 启动开发服务器
+### Start Development Server
 
 ```bash
 npm run dev
 ```
 
-访问 [http://localhost:3000](http://localhost:3000) 查看应用
+Visit [http://localhost:3000](http://localhost:3000) to view the application
 
-### 项目结构
+### Project Structure
 
 ```
 BioAuthPay/
 ├── app/                    # Next.js App Router
-│   ├── page.tsx           # 支付授权控制台主页
-│   ├── admin/             # 授权管理后台
-│   │   ├── page.tsx       # 授权配置页面
-│   │   └── 402-config/    # 402资源配置
-│   └── api/               # API路由
-│       └── resources/     # 受保护资源接口
-├── components/            # React组件
-│   ├── ui/               # shadcn/ui组件
-│   └── BioAuthModal.tsx  # 生物识别授权弹窗
-├── lib/                   # 工具库
-│   └── store.ts          # Zustand状态管理
-├── public/               # 静态资源
-├── README.md             # 项目说明
-├── prompts.md            # AI提示词记录
-└── demo.md               # 演示文档
+│   ├── page.tsx           # Payment authorization console homepage
+│   ├── admin/             # Authorization management backend
+│   │   ├── page.tsx       # Authorization configuration page
+│   │   └── 402-config/    # 402 resource configuration
+│   └── api/               # API routes
+│       └── resources/     # Protected resource interface
+├── components/            # React components
+│   ├── ui/               # shadcn/ui components
+│   └── BioAuthModal.tsx  # Biometric authorization modal
+├── lib/                   # Utility library
+│   └── store.ts          # Zustand state management
+├── public/               # Static assets
+├── README.md             # Project documentation
+├── prompts.md            # AI prompts log
+└── demo.md               # Demo documentation
 ```
 
-## 项目优势
+## Project Advantages
 
-- **安全性**: 私钥永不离开设备，生物识别保护每次签名
-- **便捷性**: 一次授权多次使用，AI自动化支付
-- **灵活性**: 可配置的授权策略，适应不同场景
-- **透明性**: 所有支付链上可查，审计追踪完整
-- **标准化**: 基于EIP-7951和HTTP 402标准，易于集成
-- **用户友好**: 无需理解区块链技术，用熟悉的生物识别即可
+- **Security**: Private keys never leave device, biometric protection for each signature
+- **Convenience**: One-time authorization for multiple uses, AI automated payments
+- **Flexibility**: Configurable authorization policies for different scenarios
+- **Transparency**: All payments on-chain and queryable, complete audit trail
+- **Standardization**: Based on EIP-7951 and HTTP 402 standards, easy to integrate
+- **User-Friendly**: No need to understand blockchain technology, just use familiar biometric authentication
 
-## 未来展望
+## Future Roadmap
 
-### 多链支持
-- 支持Ethereum、Polygon、Arbitrum等多条链
-- 跨链支付和资产桥接
-- 统一的授权额度管理
+### Multi-Chain Support
+- Support for Ethereum, Polygon, Arbitrum, and other chains
+- Cross-chain payments and asset bridging
+- Unified authorization limit management
 
-### 社交恢复
-- 基于社交关系的密钥恢复机制
-- 多设备授权管理
-- 继承人机制
+### Social Recovery
+- Key recovery mechanism based on social relationships
+- Multi-device authorization management
+- Inheritance mechanism
 
-### AI自主决策
-- 基于机器学习的支付决策优化
-- 智能预算管理和建议
-- 异常支付行为检测和预警
+### AI Autonomous Decision-Making
+- Machine learning-based payment decision optimization
+- Smart budget management and recommendations
+- Anomalous payment behavior detection and alerts
 
-### 生态扩展
-- 开发者SDK，简化集成流程
-- 服务市场，连接支付方和服务商
-- DAO治理，社区决定平台发展方向
+### Ecosystem Expansion
+- Developer SDK to simplify integration process
+- Service marketplace connecting payers and service providers
+- DAO governance, with community determining platform development direction
 
-## 相关文档
+## Related Documentation
 
-- [AI提示词记录](./prompts.md) - 记录开发过程中使用的关键AI提示词
-- [演示文档](./demo.md) - 包含演示链接、截图和使用说明
+- [AI Prompts Log](./prompts.md) - Records key AI prompts used during development
+- [Demo Documentation](./demo.md) - Contains demo links, screenshots, and usage instructions
 
-## 许可证
+## License
 
 MIT License
 
 ---
 
-**BioAuthPay** - 让AI支付像指纹解锁一样简单、安全！
+**BioAuthPay** - Making AI payments as simple and secure as fingerprint unlock!
