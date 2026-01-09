@@ -17,7 +17,7 @@ BioAuthPay is an innovative AI agent payment authorization system that perfectly
 
 ## Project Links
 
-- **GitHub**: [https://github.com/yourusername/BioAuthPay](https://github.com/yourusername/BioAuthPay)
+- **GitHub**: [https://github.com/baiqi-2019/BioAuthPay](https://github.com/baiqi-2019/BioAuthPay)
 - **Live Demo**: [http://localhost:3000](http://localhost:3000)
 
 ## Achievements and Highlights
